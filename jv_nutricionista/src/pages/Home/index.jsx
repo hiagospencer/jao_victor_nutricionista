@@ -15,8 +15,8 @@ const Home = ({ id }) => {
         <h1>
           Construa uma <b>relação saudável</b> com a comida e com o seu corpo
         </h1>
-        <p>Atendimento Presencial em Areia Branca-RN</p>
-        <p>Online em todo o Brasil</p>
+        <p>Atendimento Presencial em Areia Branca e Mossoró - RN.</p>
+        <p>Atendimento online para todo o Brasil.</p>
         <div className="button">
           <a href={url} target="_blank">
             Agendar uma Consulta <FaArrowCircleRight />

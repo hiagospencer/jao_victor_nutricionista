@@ -4,9 +4,9 @@ import imgBanner from "../../assets/img/portada.svg";
 export const Container = styled.section`
   position: relative;
   .banner {
-    background-image: url(${imgBanner});
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url(${imgBanner});
     background-attachment: fixed;
-    
     height: 100vh;
     opacity: 0.9;
     z-index: 1;
@@ -27,7 +27,7 @@ export const Container = styled.section`
 
     h1 {
       font-size: 40px;
-      color: #000;
+      color: #f0f0f0;
     }
 
     p {
@@ -35,7 +35,7 @@ export const Container = styled.section`
       font-size: 22px;
       font-weight: 600;
       font-style: italic;
-      color: #030303;
+      color: #f0f0f0;
     }
 
     .button {
@@ -48,7 +48,7 @@ export const Container = styled.section`
         color: #fff;
         padding: 10px 20px;
         border-radius: 11px;
-        background-color: #c20805;
+        background-color: #3ba349;
         font-size: 22px;
         font-weight: 500;
         text-decoration: none;
@@ -57,7 +57,7 @@ export const Container = styled.section`
         -moz-box-shadow: 4px 2px 1px 0px rgba(0, 78, 105, 0.68);
 
         &:hover {
-          background-color: #df3734;
+          background-color: #327139;
           transform: translateY(1px);
           transition: 0.2s;
         }
@@ -72,7 +72,8 @@ export const Container = styled.section`
 
   @media screen and (max-width: 768px) {
     .banner {
-      background-image: url(${imgBanner});
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url(${imgBanner});
       background-position: 100% 100%;
       background-size: cover;
       background-repeat: no-repeat;
@@ -86,29 +87,29 @@ export const Container = styled.section`
 
     .title {
       width: 100%;
-
+      text-align: center;
       margin-top: 50px;
-      padding: 15px 5px;
+      padding: 15px 5%;
       border-radius: 15px;
 
       h1 {
-        font-size: 25px;
-        color: #000;
+        font-size: 22px;
+        margin-bottom: 10px;
+        color: #f0f0f0;
       }
       p {
         font-size: 17px;
       }
 
       .button {
-        width: 50%;
-        margin: 10px auto 0 auto;
+        width: 70%;
+        margin: 15px auto 0 auto;
         a {
           font-size: 16px;
         }
 
         svg {
-          margin-left: 8px;
-          font-size: 15px;
+          display: none;
         }
       }
     }
