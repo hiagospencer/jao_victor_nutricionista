@@ -1,65 +1,62 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
+import { Link } from "react-scroll";
 
-export const Container = styled.section`
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  height: 100vh;
+export const MenuContainer = styled.div`
   display: flex;
+  flex-direction: column;
   align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 250px;
+  background-color: #041e31;
+
+  transform: ${({ menuIsVisible }) =>
+    menuIsVisible ? "translateX(0)" : "translateX(100%)"};
+  transition: transform 0.3s ease-in-out;
+  z-index: 1000;
+`;
+
+export const MenuButton = styled.button`
+  position: fixed;
+  top: 20px;
+  right: 10px;
+  background-color: #041e31;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1001;
+`;
+
+export const MenuItems = styled.ul`
+  list-style: none;
+  padding: 0;
+  margin-top: 100px ;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  z-index: 9999;
+  align-items: center;
+`;
 
-  backdrop-filter: blur(3px);
+export const MenuItem = styled.li`
+  margin: 20px 0;
+`;
 
-  background: rgba(157, 169, 151, 0.95);
+export const ItensMenu = styled(Link)`
+  font-size: 20px;
+  font-weight: 600;
+  font-style: italic;
+  text-decoration: none;
+  width: 100%;
+  color: #f2f2f2;
+  padding: 5px 0;
+  cursor: pointer;
 
-  background: linear-gradient(
-    45deg,
-    rgba(4, 30, 49, 0.95) 45%,
-    rgba(9, 214, 229, 0.45) 85%
-  );
-
-  opacity: 0;
-  pointer-events: none;
-  transform: translateY(50px);
-
-  transition: 0.5s;
-
-  > svg {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    transform: rotate(45deg);
-    transition: 0.7s;
-    color: white;
-    cursor: pointer;
+  &:hover {
+    color: #3ba349;
+    transition: color 0.2s;
   }
-
-  ul {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-
-    transform: scale(1);
-    transition: 0.2s;
-  }
-
-  ${({ menuIsVisible }) =>
-    menuIsVisible &&
-    css`
-      opacity: 1;
-      pointer-events: auto;
-      transform: translateY(0px);
-
-      > svg {
-        transform: rotate(0deg);
-      }
-      ul {
-        transform: scale(1.4);
-      }
-    `}
 `;

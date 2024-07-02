@@ -52,7 +52,7 @@ const Header = () => {
         </a>
       </div>
 
-      <ul>
+      <ul className="menu-desktop">
         {menuItens.map((menu) => (
           <li key={menu.id}>
             <ItensMenu

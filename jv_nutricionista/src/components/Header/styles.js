@@ -40,7 +40,7 @@ export const Container = styled.section`
   }
 
   @media screen and (max-width: 768px) {
-    ul {
+    .menu-desktop {
       display: none;
     }
     .logo img {
