@@ -8,7 +8,6 @@ const Home = ({ id }) => {
     "Olá, João Victor, tudo bem? Tenho interesse em um dos seus serviços!";
 
   const url = "https://wa.me/" + numeroDestino + "?text=" + mensagem;
-
   return (
     <Container id={id}>
       <div className="banner"></div>

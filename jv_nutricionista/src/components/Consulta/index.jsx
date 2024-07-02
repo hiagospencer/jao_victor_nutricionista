@@ -12,6 +12,21 @@ import imgOnline from "../../assets/img/consultas-online.webp";
 import avaliacaoFisica from "../../assets/img/avaliacao-fisica.jpg";
 
 function Consulta({ id }) {
+  const numeroDestino = "+5584998145917";
+  const mensagemPresencial =
+    "Olá, João Victor, tudo bem? Tenho interesse em fazer uma consulta presencialmente!";
+  const mensagemOnline =
+    "Olá, João Victor, tudo bem? Tenho interesse em fazer uma consulta online!";
+  const mensagemAvalicaoFisica =
+    "Olá, João Victor, tudo bem? Tenho interesse em fazer uma avaliação física!";
+
+  const urlPresencial =
+    "https://wa.me/" + numeroDestino + "?text=" + mensagemPresencial;
+  const urlOnline =
+    "https://wa.me/" + numeroDestino + "?text=" + mensagemOnline;
+  const urlAvalicaoFisica =
+    "https://wa.me/" + numeroDestino + "?text=" + mensagemAvalicaoFisica;
+
   const el = useRef();
   const tl = useRef();
 
@@ -84,7 +99,9 @@ function Consulta({ id }) {
               um planejamento alimentar individualizado e específico pra você.
             </p>
             <div className="button_consulta">
-              <a href="#">Consultar presencialmente</a>
+              <a href={urlPresencial} target="_blank">
+                Consultar presencialmente
+              </a>
             </div>
           </div>
         </div>
@@ -109,7 +126,9 @@ function Consulta({ id }) {
               encaixe na sua rotina.
             </p>
             <div className="button_consulta">
-              <a href="#">Consultar online</a>
+              <a href={urlOnline} target="_blank">
+                Consultar online
+              </a>
             </div>
           </div>
         </div>
@@ -128,7 +147,9 @@ function Consulta({ id }) {
               de 10 a 20 minutos
             </p>
             <div className="button_consulta">
-              <a href="#">Fazer avaliação física</a>
+              <a href={urlAvalicaoFisica} target="_blank">
+                Fazer avaliação física
+              </a>
             </div>
           </div>
         </div>
