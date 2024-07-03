@@ -1,6 +1,5 @@
 /* eslint-disable react/prop-types */
 import { Container } from "./styles";
-import { FaArrowCircleRight } from "react-icons/fa";
 
 const index = ({ id }) => {
   const numeroDestino = "+5584998145917";
@@ -19,7 +18,7 @@ const index = ({ id }) => {
         <p>Atendimento online para todo o Brasil.</p>
         <div className="button">
           <a href={url} target="_blank">
-            Agendar uma Consulta <FaArrowCircleRight />
+            Agendar uma Consulta
           </a>
         </div>
       </section>
