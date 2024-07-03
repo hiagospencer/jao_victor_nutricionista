@@ -4,7 +4,7 @@ import { IoClose } from "react-icons/io5";
 
 import { MenuContainer, MenuItems,MenuButton, MenuItem, ItensMenu } from "./styles";
 
-const MenuMobile = ({ menuIsVisible, setMenuIsVisible }) => {
+const index = ({ menuIsVisible, setMenuIsVisible }) => {
   const menuItens = [
     {
       id: 1,
@@ -55,4 +55,4 @@ const MenuMobile = ({ menuIsVisible, setMenuIsVisible }) => {
   );
 };
 
-export default MenuMobile;
+export default index;

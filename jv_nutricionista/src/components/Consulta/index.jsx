@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/rules-of-hooks */
 /* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 import { useLayoutEffect, useRef } from "react";
@@ -11,7 +12,7 @@ import imgPresencial from "../../assets/img/consulta-presencial.webp";
 import imgOnline from "../../assets/img/consultas-online.webp";
 import avaliacaoFisica from "../../assets/img/avaliacao-fisica.jpg";
 
-function Consulta({ id }) {
+function index({ id }) {
   const numeroDestino = "+5584998145917";
   const mensagemPresencial =
     "Olá, João Victor, tudo bem? Tenho interesse em fazer uma consulta presencialmente!";
@@ -158,4 +159,4 @@ function Consulta({ id }) {
   );
 }
 
-export default Consulta;
+export default index;

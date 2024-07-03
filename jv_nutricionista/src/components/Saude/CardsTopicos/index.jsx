@@ -2,7 +2,7 @@ import topicos from "../../../services/TopicoSaude";
 
 import { Container } from "./styles";
 
-function CardsTopicos() {
+function index() {
   const apiTopicos = topicos.topicos.map((topico) => (
     <Container key={topico.id}>
       <h2>{topico.title}</h2>
@@ -14,4 +14,4 @@ function CardsTopicos() {
     return <>{ apiTopicos}</>;
 }
 
-export default CardsTopicos;
+export default index;

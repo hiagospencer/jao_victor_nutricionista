@@ -2,7 +2,7 @@
 import CardsTopicos from "./CardsTopicos";
 import { Container, GridImportancia } from "./styles";
 
-function Saude({id}) {
+function index({id}) {
   return (
     <Container id={id}>
       <h3>Saúde & Bem-Estar</h3>
@@ -17,4 +17,4 @@ function Saude({id}) {
   );
 }
 
-export default Saude;
+export default index;

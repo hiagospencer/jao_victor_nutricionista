@@ -10,7 +10,7 @@ import { MdOutlineEmail, MdLocationOn } from "react-icons/md";
 
 import { Container, MapGoogle } from "./styles";
 
-function Contato({ id }) {
+function index({ id }) {
   return (
     <Container id={id}>
       <section className="contato">
@@ -65,4 +65,4 @@ function Contato({ id }) {
   );
 }
 
-export default Contato;
+export default index;

@@ -2,7 +2,7 @@
 import { Container } from "./styles";
 import { FaArrowCircleRight } from "react-icons/fa";
 
-const Home = ({ id }) => {
+const index = ({ id }) => {
   const numeroDestino = "+5584998145917";
   const mensagem =
     "Olá, João Victor, tudo bem? Tenho interesse em um dos seus serviços!";
@@ -27,4 +27,4 @@ const Home = ({ id }) => {
   );
 };
 
-export default Home;
+export default index;

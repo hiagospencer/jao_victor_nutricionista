@@ -1,6 +1,6 @@
 import { Container } from "./styles";
 
-function Footer() {
+function index() {
   return (
     <Container>
       <h3>João Victor Copyright ® 2024 - Todos os Direitos Reservados</h3>
@@ -16,4 +16,4 @@ function Footer() {
   );
 }
 
-export default Footer;
+export default index;

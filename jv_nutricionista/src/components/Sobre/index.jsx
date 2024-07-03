@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/rules-of-hooks */
 /* eslint-disable react/prop-types */
 import { useLayoutEffect } from "react";
 
@@ -8,7 +9,7 @@ import { Container } from "./styles";
 
 import jvImg from "../../assets/img/joao_victor2.jpeg";
 
-function Sobre({ id }) {
+function index({ id }) {
   useLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
     gsap.to(".foto", {
@@ -80,4 +81,4 @@ function Sobre({ id }) {
   );
 }
 
-export default Sobre;
+export default index;

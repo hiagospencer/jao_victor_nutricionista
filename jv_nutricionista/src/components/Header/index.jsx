@@ -1,3 +1,5 @@
+/* eslint-disable react-hooks/rules-of-hooks */
+
 import { useState } from "react";
 
 import { animateScroll as scroll } from "react-scroll";
@@ -10,7 +12,7 @@ import logo from "../../assets/img/logo_black.png";
 
 import { Container, ItensMenu } from "./styles";
 
-const Header = () => {
+const index = () => {
   const [menuIsVisible, setMenuIsVisible] = useState(false);
 
   const onMenuVisible = () => {
@@ -78,4 +80,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default index;

@@ -1,4 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
+/* eslint-disable react-hooks/rules-of-hooks */
+
 import { useState, useEffect } from "react";
 import { Container, CarouselContainer, ImageContainer, Image } from "./styles";
 
@@ -8,7 +10,7 @@ import imgEscritorio3 from "../../assets/img/escritorio3.jpeg";
 import imgEscritorio4 from "../../assets/img/escritorio4.jpeg";
 import imgEscritorio5 from "../../assets/img/escritorio5.jpeg";
 
-const Caroussel = () => {
+const index = () => {
   const images = [
     imgEscritorio1,
     imgEscritorio2,
@@ -37,4 +39,4 @@ const Caroussel = () => {
   );
 };
 
-export default Caroussel;
+export default index;
