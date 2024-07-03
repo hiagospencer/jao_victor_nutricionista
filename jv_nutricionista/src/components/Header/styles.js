@@ -11,8 +11,16 @@ export const Container = styled.section`
   margin: 0 auto;
   padding: 0 2%;
   background-color: #041e31;
-  height: 100px;
+  height: 110px;
   border-bottom: 1px solid #fff;
+
+
+  &.bg-header {
+    background-color: rgba(4, 30, 49, 0.9) !important;
+    transition: 0.4s ease-in;
+    height: 80px;
+
+  }
 
   .logo img {
     width: 250px;
@@ -44,8 +52,8 @@ export const Container = styled.section`
       display: none;
     }
     .logo img {
-      width: 200px;
-      height: 300px;
+      width: 150px;
+      height: 220px;
     }
     .menu-mobile {
       display: block;

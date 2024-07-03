@@ -14,6 +14,7 @@ import { Container, ItensMenu } from "./styles";
 
 const index = () => {
   const [menuIsVisible, setMenuIsVisible] = useState(false);
+  const [colorBgHeader, setColorBgHeader] = useState(false);
 
   const onMenuVisible = () => {
     setMenuIsVisible(!menuIsVisible);
@@ -42,8 +43,18 @@ const index = () => {
     },
   ];
 
+  const chanceColorBgHeader = () => {
+    if (window.scrollY >= 70) {
+      setColorBgHeader(true);
+    } else {
+      setColorBgHeader(false);
+    }
+  };
+
+  window.addEventListener("scroll", chanceColorBgHeader);
+
   return (
-    <Container>
+    <Container className={colorBgHeader ? "bg-header" : ""}>
       <div className="logo">
         <a href="#">
           <img

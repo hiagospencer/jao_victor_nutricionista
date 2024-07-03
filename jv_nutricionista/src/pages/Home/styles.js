@@ -7,6 +7,7 @@ export const Container = styled.section`
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
       url(${imgBanner});
     background-attachment: fixed;
+    background-repeat: no-repeat;
     height: 100vh;
     opacity: 0.9;
     z-index: 1;
