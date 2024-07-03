@@ -1,4 +1,4 @@
-import Header from "./components/Header";
+import Header from "./components/Header/index.jsx";
 import Home from "./pages/Home";
 import Sobre from "./components/Sobre";
 import Saude from "./components/Saude";
