@@ -2,7 +2,7 @@ import styled, { keyframes } from "styled-components";
 
 const slide = keyframes`
   0% { transform: translateX(0); }
-  100% { transform: translateX(-100%); }
+  100% { transform: translateX(-30%); }
 `;
 
 export const Container = styled.section`
@@ -49,7 +49,7 @@ export const ImageContainer = styled.div`
   width: 200%;
 
   gap: 15px;
-  animation: ${slide} 25s linear infinite;
+  animation: ${slide} 20s linear infinite;
 `;
 
 export const Image = styled.img`
@@ -57,4 +57,9 @@ export const Image = styled.img`
   height: 300px;
   flex-shrink: 0;
   border: 1px solid #ccc;
+
+  @media (width <= 768px) {
+    width: 250px;
+    height: 250px;
+  }
 `;

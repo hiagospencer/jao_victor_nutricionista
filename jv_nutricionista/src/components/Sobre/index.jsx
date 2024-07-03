@@ -15,12 +15,12 @@ function index({ id }) {
     gsap.to(".foto", {
       x: 0,
       opacity: 1,
-      duration: 2.5,
-      ease: "bounce.out",
+      duration: 2,
+      ease: "back.out(1.7)",
       scrollTrigger: {
         trigger: ".img_perfil",
-        start: "top 400px",
-        end: "bottom 200px",
+        start: "top 750px",
+        end: "bottom 500px",
         scrub: true,
       },
     });

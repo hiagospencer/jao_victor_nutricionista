@@ -15,8 +15,8 @@ export const Container = styled.section`
   border-bottom: 1px solid #fff;
 
   .logo img {
-    width: 300px;
-    height: 50vh;
+    width: 250px;
+    height: 35vh;
   }
 
   ul {

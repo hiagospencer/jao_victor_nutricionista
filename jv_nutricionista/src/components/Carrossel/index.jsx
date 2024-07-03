@@ -21,7 +21,6 @@ const index = () => {
   const [duplicatedImages, setDuplicatedImages] = useState([]);
 
   useEffect(() => {
-    // Duplicar as imagens para um efeito de looping infinito
     setDuplicatedImages([...images, ...images]);
   }, [images]);
 

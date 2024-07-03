@@ -21,12 +21,12 @@ function index({ id }) {
   const mensagemAvalicaoFisica =
     "Olá, João Victor, tudo bem? Tenho interesse em fazer uma avaliação física!";
 
-  const urlPresencial =
-    "https://wa.me/" + numeroDestino + "?text=" + mensagemPresencial;
-  const urlOnline =
-    "https://wa.me/" + numeroDestino + "?text=" + mensagemOnline;
-  const urlAvalicaoFisica =
-    "https://wa.me/" + numeroDestino + "?text=" + mensagemAvalicaoFisica;
+  const mensagemWhatsapp = (mensagem) => {
+    const url = "https://wa.me/" + numeroDestino + "?text=" + mensagem;
+
+    return url;
+  };
+
 
   const el = useRef();
   const tl = useRef();
@@ -100,7 +100,7 @@ function index({ id }) {
               um planejamento alimentar individualizado e específico pra você.
             </p>
             <div className="button_consulta">
-              <a href={urlPresencial} target="_blank">
+              <a href={mensagemWhatsapp(mensagemPresencial)} target="_blank">
                 Consultar presencialmente
               </a>
             </div>
@@ -127,7 +127,7 @@ function index({ id }) {
               encaixe na sua rotina.
             </p>
             <div className="button_consulta">
-              <a href={urlOnline} target="_blank">
+              <a href={mensagemWhatsapp(mensagemOnline)} target="_blank">
                 Consultar online
               </a>
             </div>
@@ -148,7 +148,9 @@ function index({ id }) {
               de 10 a 20 minutos
             </p>
             <div className="button_consulta">
-              <a href={urlAvalicaoFisica} target="_blank">
+              <a
+                href={mensagemWhatsapp(mensagemAvalicaoFisica)}
+                target="_blank">
                 Fazer avaliação física
               </a>
             </div>

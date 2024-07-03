@@ -11,14 +11,15 @@ export const Container = styled.section`
 
   .img_perfil {
     width: 50%;
-    height: 90%;
+    height: 80%;
 
     .foto {
       height: 400px;
       border-radius: 15px;
-      transform: translateX(-00px);
+      transform: translateX(-150px);
       opacity: 0;
     }
+
   }
 
   .descricao {
@@ -26,7 +27,7 @@ export const Container = styled.section`
     display: flex;
     flex-direction: column;
     justify-content: right;
-    transform: translateY(80px);
+    transform: translateY(-80px);
     opacity: 0;
 
     p {
