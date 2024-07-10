@@ -60,21 +60,14 @@ function index({ id }) {
         </div>
         <h2>João Victor</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum rem et
-          est harum omnis, architecto iste amet placeat corporis temporibus
-          ipsam quae asperiores id eveniet, quisquam dolores provident a
-          dignissimos.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum rem et
-          est harum omnis, architecto iste amet placeat corporis temporibus
-          ipsam quae asperiores id eveniet, quisquam dolores provident a
-          dignissimos. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-        </p>
-        <p>
-          Rerum rem et est harum omnis, architecto iste amet placeat corporis
-          temporibus ipsam quae asperiores id eveniet, quisquam dolores
-          provident a dignissimos.
+          Meu nome é João Victor, sou nutricionista e graduando em nutrição
+          esportiva, exames laboratoriais e clínica. Escolhi a área esportiva
+          por afinidade, por ter praticado e ser praticante de diversas
+          modalidades como crossfit, musculação, surf, jiu-jitsu, Tae Kwon Do,
+          boxe, mma, capoeira, corrida e natação. Minhas experiências com vários
+          esportes e competições combinado com a formação, faz com que eu
+          consiga facilitar as estratégias nutricionais alinhada com os
+          objetivos e realidades de cada paciente.
         </p>
       </div>
     </Container>
